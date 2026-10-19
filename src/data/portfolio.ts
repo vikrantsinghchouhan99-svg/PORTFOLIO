@@ -201,10 +201,19 @@ export type Achievement = {
 export const achievements: Achievement[] = [
   {
     id: 'au-academy-java',
-    title: 'Full Stack Java Trainee',
-    org: 'AU Academy',
-    detail: 'Completed comprehensive Full Stack Java Development training covering Core Java, JDBC, Servlets, Spring Boot, and SQL.',
-    laurel: 'Full Stack Java',
+    title: 'Full Stack Java with AI',
+    org: 'AU Ignite • Medhavi Skills Univ.',
+    detail: 'Cleared comprehensive 500-hour assessment in Full Stack Java with AI with an outstanding Grade A+ from Medhavi Skills University & AU Ignite.',
+    laurel: 'Grade A+ • 500 Hrs',
+    link: '/assets/java-skill-competency-certificate.jpg',
+  },
+  {
+    id: 'au-ignite-java',
+    title: 'Vocational Java Trainee',
+    org: 'AU Ignite • AU Foundation',
+    detail: 'Awarded Certificate of Achievement for successful completion of Vocational Training in Full Stack Java with AI in partnership with Ambuja Foundation.',
+    laurel: 'AU Ignite',
+    link: '/assets/au-ignite-java-certificate.jpg',
   },
   {
     id: 'infotact-python',
@@ -241,7 +250,8 @@ export const achievements: Achievement[] = [
 export type Certification = { issuer: string; name: string; link: string };
 
 export const certifications: Certification[] = [
-  { issuer: 'AU Academy', name: 'Full Stack Java Development Training', link: 'https://github.com/vikrantsinghchouhan99-svg' },
+  { issuer: 'Medhavi Skills Univ.', name: 'Full Stack Java with AI (Grade A+ · 500 Hrs)', link: '/assets/java-skill-competency-certificate.jpg' },
+  { issuer: 'AU Foundation', name: 'AU Ignite Full Stack Java with AI Certification', link: '/assets/au-ignite-java-certificate.jpg' },
   { issuer: 'Infotact Solutions', name: 'Python Development Training', link: '/assets/python-training-certificate.png' },
   { issuer: 'VMOU', name: 'RSCIT – Vardhman Mahaveer Open University (87%)', link: '/assets/rscit-certificate.jpg' },
 ];
@@ -514,7 +524,12 @@ export const introSlides: IntroSlide[] = [
   {
     kicker: 'Achievements',
     title: 'Certifications & Honors',
-    lines: ['AU Academy Full Stack Java Certification', 'Infotact Solutions Python Training Certification', 'RSCIT VMOU State Distinction — 87% Score'],
+    lines: [
+      'Full Stack Java with AI (Grade A+ · 500 Hrs) · Medhavi Skills Univ. & AU Ignite',
+      'AU Ignite · AU Foundation Java Training Certification',
+      'Infotact Solutions Python Training Certification',
+      'RSCIT VMOU State Distinction — 87% Score',
+    ],
   },
   {
     kicker: 'Current Mission',
