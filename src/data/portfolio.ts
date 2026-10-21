@@ -224,6 +224,14 @@ export const achievements: Achievement[] = [
     link: '/assets/python-training-certificate.png',
   },
   {
+    id: 'hackerrank-sql',
+    title: 'SQL (Basic) Certified',
+    org: 'HackerRank',
+    detail: 'Passed the HackerRank Skill Certification test in SQL (Basic), validating expertise in relational database queries, joins, filters, and aggregations.',
+    laurel: 'HackerRank Certified',
+    link: '/assets/sql-basic-certificate.jpg',
+  },
+  {
     id: 'rscit-distinction',
     title: 'RSCIT 87% Distinction',
     org: 'VMOU',
@@ -232,24 +240,25 @@ export const achievements: Achievement[] = [
     link: '/assets/rscit-certificate.jpg',
   },
   {
-    id: 'cbse-12th-merit',
-    title: '80% Science & Math',
-    org: 'CBSE Board',
-    detail: 'Higher Secondary education completed with 80% marks in Science & Mathematics discipline.',
-    laurel: 'Academic Merit',
-  },
-  {
     id: 'deployed-projects',
     title: '3+ Live Web Projects',
     org: 'Netlify • Vercel',
     detail: 'Successfully built and deployed multiple real-world web applications and utilities with responsive design.',
     laurel: 'Web Projects',
   },
+  {
+    id: 'cbse-12th-merit',
+    title: '80% Science & Math',
+    org: 'CBSE Board',
+    detail: 'Higher Secondary education completed with 80% marks in Science & Mathematics discipline.',
+    laurel: 'Academic Merit',
+  },
 ];
 
 export type Certification = { issuer: string; name: string; link: string };
 
 export const certifications: Certification[] = [
+  { issuer: 'HackerRank', name: 'SQL (Basic) Skill Certification', link: '/assets/sql-basic-certificate.jpg' },
   { issuer: 'Medhavi Skills Univ.', name: 'Full Stack Java with AI (Grade A+ · 500 Hrs)', link: '/assets/java-skill-competency-certificate.jpg' },
   { issuer: 'AU Foundation', name: 'AU Ignite Full Stack Java with AI Certification', link: '/assets/au-ignite-java-certificate.jpg' },
   { issuer: 'Infotact Solutions', name: 'Python Development Training', link: '/assets/python-training-certificate.png' },
@@ -327,7 +336,7 @@ export const skillEvidence: Record<string, string[]> = {
   CSS3: ['Amazon Clone Website', 'Expense Tracker', 'Calculator App'],
   Bootstrap: ['Full Stack Java Web Applications'],
   MySQL: ['AU Academy Relational Database Training', 'Full Stack Project Schemas'],
-  SQL: ['AU Academy SQL Module', 'Table Queries & Optimization'],
+  SQL: ['AU Academy SQL Module', 'Table Queries & Optimization', 'HackerRank SQL (Basic) Certification'],
   'Problem Solving': ['AU Academy Project Building', 'Expense Tracker & Calculator App Logic'],
   Communication: ['University of Rajasthan BCA', 'AU Academy Collaboration'],
   Teamwork: ['AU Academy Trainee Cohort', 'Collaborative Coding'],
@@ -527,6 +536,7 @@ export const introSlides: IntroSlide[] = [
     lines: [
       'Full Stack Java with AI (Grade A+ · 500 Hrs) · Medhavi Skills Univ. & AU Ignite',
       'AU Ignite · AU Foundation Java Training Certification',
+      'HackerRank SQL (Basic) Skill Certification',
       'Infotact Solutions Python Training Certification',
       'RSCIT VMOU State Distinction — 87% Score',
     ],
